@@ -6,11 +6,11 @@
   "theme_color": "#ef4e2a",
   "background_color": "#fff",
   "icons": [{
-    "src": "/images/POT_small.png",
+    "src": "https://kombobreaker.github.io/Pot/images/POT_small.png",
     "sizes": "192x192",
     "type": "image/png"
   },{
-    "src": "/images/POT_bigger.png",
+    "src": "https://kombobreaker.github.io/Pot/images/POT_bigger.png",
     "sizes": "512x512",
     "type": "images/png"
   }]
