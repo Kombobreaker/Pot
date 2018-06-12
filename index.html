@@ -68,15 +68,23 @@
   
       
       <script type="text/javascript">
+        if (localStorage.sips)
+        {
+          document.getElementById("clicks").innerHTML = localStorage.sips;
+        }
+        else
+        {
+          localStorage.sips = 0;
+        }
     var clicks = 0;
     function onClickPlus() {
-        localStorage.clicks += 1;
-        document.getElementById("clicks").innerHTML = localStorage.clicks;
-    };
+        Number(localStorage.sips) += 1;
+        document.getElementById("sips").innerHTML = localStorage.sips;
+    }
     
     function onClickMinus() {
-        localStorage.clicks -= 1;
-        document.getElementById("clicks").innerHTML = localStorage.clicks;
+        clicks -= 1;
+        document.getElementById("clicks").innerHTML = clicks;
     };
     </script>
       <p>
