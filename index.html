@@ -70,13 +70,13 @@
       <script type="text/javascript">
     var clicks = 0;
     function onClickPlus() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
+        localStorage.clicks += 1;
+        document.getElementById("clicks").innerHTML = localStorage.clicks;
     };
     
     function onClickMinus() {
-        clicks -= 1;
-        document.getElementById("clicks").innerHTML = clicks;
+        localStorage.clicks -= 1;
+        document.getElementById("clicks").innerHTML = localStorage.clicks;
     };
     </script>
       <p>
