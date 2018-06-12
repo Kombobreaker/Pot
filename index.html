@@ -68,32 +68,21 @@
   
       
       <script type="text/javascript">
-        if (localStorage.sips)
-        {
-          document.getElementById("sips").innerHTML = localStorage.sips;
-        }
-        else
-        {
-          localStorage.sips = 0;
-        }
-    //var clicks = 0;
+
+    var clicks = 0;
     function onClickPlus() {
-        localStorage.sips = Number(localStorage.sips) + 1;
-        document.getElementById("sips").innerHTML = localStorage.sips;
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
     }
-    function onClickMinus() {
-        localStorage.sips = Number(localStorage.sips) - 1;
-        document.getElementById("sips").innerHTML = localStorage.sips;
-    };
     
-    //function onClickMinus() {
-       // clicks -= 1;
-        //document.getElementById("clicks").innerHTML = clicks;
-    //};
+    function onClickMinus() {
+        clicks -= 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
     </script>
       <p>
      <ons-button ripple modifier="outline" onClick="onClickMinus()">-</ons-button>
-    <a id="sips">0</a>
+    <a id="clicks">0</a>
     <ons-button ripple modifier="outline" onClick="onClickPlus()">+</ons-button>
     </p>
         
