@@ -68,16 +68,21 @@
       
       <script type="text/javascript">
     var clicks = 0;
-    function onClick() {
+    function onClickPlus() {
         clicks += 1;
         document.getElementById("clicks").innerHTML = clicks;
     };
+    
+    function onClickMinus() {
+        clicks -= 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
     </script>
-      
-     <ons-button onClick="onClick()">+</ons-button><p>Clicks: <a id="clicks">0</a></p>
-    
-
-    
+      <p>
+     <ons-button onClick="onClickMinus()">-</ons-button>
+    Clicks: <a id="clicks">0</a>
+    <ons-button onClick="onClickPlus()">+</ons-button>
+    </p>
         
       </section>
       
