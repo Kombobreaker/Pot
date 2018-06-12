@@ -9,8 +9,7 @@
   <script>
   if (navigator.serviceWorker) {
   navigator.serviceWorker.register('/Pot/sw.js', {scope: '/Pot/'})
-      .then(() => console.log("Service Worker Registered"))
-      .catch(e => console.log(e));
+
   }
 </script>
     <!-- Add to home screen for Safari on iOS -->
