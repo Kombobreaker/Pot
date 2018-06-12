@@ -62,6 +62,18 @@
       <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
         POT
       </div>
+      
+      <script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+      
+    <button type="button" onClick="onClick()">Click me</button>
+    <p>Clicks: <a id="clicks">0</a></p>
+      
     </ons-carousel-item>
     <ons-carousel-item style="background-color: #f4c542;">
       <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
