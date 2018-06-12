@@ -7,9 +7,10 @@
   <link rel="manifest" href="https://kombobreaker.github.io/Pot/manifest.json">
   <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
   <script>
-  if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('/Pot/sw.js', {scope: '/Pot/'})
-
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/Pot/sw.js', {scope: '/Pot/'})
+      .then(() => console.log("Service Worker Registered"))
+      .catch(e => console.log(e));
   }
 </script>
     <!-- Add to home screen for Safari on iOS -->
