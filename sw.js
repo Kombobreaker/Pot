@@ -1,3 +1,4 @@
+// VERSION: 2
 self.addEventListener('install', function(e) {
   console.log('install');
 
