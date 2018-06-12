@@ -1,4 +1,4 @@
-// VERSION: 3
+// VERSION: 4
 self.addEventListener('install', function(e) {
   console.log('install');
 
