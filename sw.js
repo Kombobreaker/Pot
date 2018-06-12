@@ -3,8 +3,8 @@ var VERSION = 'v_01'              // Version of the off-line cache (change this 
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [                            // Add URL you want to cache in this list.
   '/Pot/',                     // If you have separate JS/CSS files,
-  '/Pot/index.html'            // add path to those files here
-  '/manifest.json',
+  '/Pot/index.html',           // add path to those files here
+  '/Pot/manifest.json',
   'https://unpkg.com/onsenui/css/onsenui.min.css',
   'https://unpkg.com/onsenui/css/onsen-css-components.min.css',
   'https://unpkg.com/onsenui/js/onsenui.min.js'
