@@ -69,7 +69,7 @@
       
       <script type="text/javascript">
         
-        function clickCounter() {
+        function clickCounterP() {
     if(typeof(Storage) !== "undefined") {
         if (localStorage.clickcount) {
             localStorage.clickcount = Number(localStorage.clickcount)+1;
@@ -82,12 +82,24 @@
     }
 }
 
+        function clickCounterM() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)-1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = localStorage.clickcount;
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
     
     </script>
       <p>
-     <ons-button ripple modifier="outline" onClick="clickCounter()">-</ons-button>
+     <ons-button ripple modifier="outline" onClick="clickCounterM()">-</ons-button>
     <a id="result">0</a>
-    <ons-button ripple modifier="outline" onClick="clickCounter()">+</ons-button>
+    <ons-button ripple modifier="outline" onClick="clickCounterP()">+</ons-button>
     </p>
         
       </div>
